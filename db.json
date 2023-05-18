@@ -1,0 +1,91 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "fname": "jay",
+      "lname": "pathak",
+      "email": "jkpindindore@gmail.com",
+      "phone": "445",
+      "password": "123456789",
+      "id": 2
+    },
+    {
+      "fname": "veeru",
+      "lname": "pathak",
+      "email": "jkpindindore@gmail.com",
+      "phone": "445",
+      "password": "123456",
+      "id": 3
+    },
+    {
+      "fname": "jay",
+      "lname": "pathak",
+      "email": "jkpindindore@gmail.com",
+      "phone": "jay",
+      "password": "123456789",
+      "id": 4
+    },
+    {
+      "fname": "vijay",
+      "lname": "pathak",
+      "email": "jkpindindore@gmail.com",
+      "phone": "7987465678",
+      "password": "1234",
+      "id": 5
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "email": null,
+      "phone": "vijay",
+      "password": "1234",
+      "id": 6
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "email": null,
+      "phone": "vijay",
+      "password": "1234",
+      "id": 7
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "email": null,
+      "phone": "vijay",
+      "password": "1234",
+      "id": 8
+    },
+    {
+      "fname": "anuj",
+      "lname": "pathak",
+      "email": "jkpindindore@gmail.com",
+      "phone": "07987485024",
+      "password": "12345",
+      "id": 9
+    },
+    {
+      "fname": null,
+      "lname": null,
+      "email": null,
+      "phone": null,
+      "password": null,
+      "id": 10
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

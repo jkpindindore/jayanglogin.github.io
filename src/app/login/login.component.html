@@ -1,0 +1,36 @@
+<div class="container bg-white ml-auto">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+    <form [formGroup]="login" (ngSubmit)="logindata(login)" class="form-box">
+        <h3>Login</h3>
+        <div class="form-group">
+            <label>User Name</label>&nbsp;&nbsp;
+            <input type="text" formControlName="fname" class="form-control mb-3 mt-3" placeholder="Enter Email"/>
+        </div>
+ <br>
+        <div class="form-group">
+            <label>Password</label>&nbsp;&nbsp;
+            <input type="password" formControlName="password" class="form-control mb-3 mt-3" placeholder="Enter Password"/>
+        </div>
+       
+    
+        <button type="submit" class="btn btn-success">Login</button>
+        <br>
+        <span>Create New Account </span>&nbsp;&nbsp;
+        <a routerLink="signup" class="btn btn-success" (click)="sbtn2()">Signup</a>
+        <br/>
+       
+        <br><br>
+        <button type="submit" routerLink="forgetpassword" class="btn btn-danger">Forget Password</button>
+    </form>
+    </div>
+
+    <div class="col-md-2"></div>
+
+
+</div>
+</div>
+<router-outlet></router-outlet>
+
+

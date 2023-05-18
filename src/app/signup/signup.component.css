@@ -1,0 +1,33 @@
+.container{
+    width: 100%;
+    max-width: 600px;
+    /* background-color: antiquewhite; */
+    background: rgb(255, 255, 255);
+    
+    margin: 0 auto;
+    display: block;
+    padding: 2%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.form-box1{
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    max-width: 500px;
+}
+h3{
+    color: rgb(69, 4, 199);
+    font-weight: bold;
+}
+
+body{
+    background: color #343343;
+}
+
+input{
+    width: 100%;
+    max-width: 200px;
+   
+background:#d3d3d3
+}
+
