@@ -5,6 +5,13 @@ import { Router } from '@angular/router';
 // import { ToastrService } from 'ngx-toastr';
 declare var $:any;
 
+interface IUser {
+  name: string;
+  email: string;
+  password: string;
+  showPassword: boolean;
+}
+
 @Component({
   selector: 'app-singup',
   templateUrl: './signup.component.html',
@@ -12,8 +19,11 @@ declare var $:any;
 })
 export class SingupComponent implements OnInit {
 
-  constructor( private _route:Router, private _http:HttpClient) { }
+  constructor( private _route:Router, private _http:HttpClient) {
+    this.user = {} as IUser;
+   }
   singup:FormGroup|any;
+  user: IUser;
   signuser:any;
   ngOnInit(): void {
     this.singup = new FormGroup({
