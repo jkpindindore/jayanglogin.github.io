@@ -2,11 +2,27 @@
     <div class="row">
         <div class="col-md-2"></div>
         <div class="col-md-8">
-    <form [formGroup]="login" (ngSubmit)="logindata(login)" class="form-box">
+    <form [formGroup]="login"  (ngSubmit)="logindata(login)" class="form-box">
         <h3>Login</h3>
         <div class="form-group">
-            <label>User Name</label>&nbsp;&nbsp;
-            <input type="text" formControlName="fname" class="form-control mb-3 mt-3" placeholder="Enter Email"/>
+            <label for="name">User Name</label>&nbsp;&nbsp;
+            <input type="text" formControlName="fname" name="fname" class="form-control mb-3 mt-3" placeholder="Enter Email" 
+             required minlength="1" maxlength="250" 
+            />
+            
+            <!-- <div *ngIf="fname.invalid && (fname.dirty || fname.touched)" class="invalid-feedback">
+                <div *ngIf="fname.errors?.['required']">
+                  This field is required.
+                </div>
+                <div *ngIf="name.errors?.['minlength']">
+                  This field must have at least 1 character.
+                </div>
+                <div *ngIf="fname.errors? ?.['maxlength']">
+                  This field must have at most 250 characters.
+                </div>
+              </div> -->
+
+
         </div>
  <br>
         <div class="form-group">
@@ -22,7 +38,7 @@
         <br/>
        
         <br><br>
-        <button type="submit" routerLink="forgetpassword" class="btn btn-danger">Forget Password</button>
+        <a routerLink="forgetpassword" class="btn btn-danger">Forget Password</a>
     </form>
     </div>
 

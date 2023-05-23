@@ -2,8 +2,8 @@
     <form [formGroup]="singup" (ngSubmit)="singupdata(singup)" class="form-box1">
         <h3>Signup </h3>
         <div class="form-group">
-            <label>First Name</label>
-            <input type="text" formControlName="fname" class="form-control mb-3 mt-3" placeholder="Enter First Name"/>
+            <label for="name">First Name</label>
+            <input type="text" formControlName="fname" class="form-control mb-3 mt-3" id="name" name="name" formControlName="name" placeholder="Your name" required minlength="1" maxlength="250" class="form-control form-control-sm"/>
         </div>
 <br>
         <div class="form-group">

@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 declare var $:any;
 @Component({
@@ -14,7 +14,10 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
     this.login = new FormGroup({
-      'fname': new FormControl(),
+      'fname': new FormControl(
+        this.fname, [Validators.minLength(1),
+        Validators.maxLength(250),
+        ]),
       'password': new FormControl()
     })
   }
